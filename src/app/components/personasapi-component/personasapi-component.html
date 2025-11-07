@@ -1,0 +1,12 @@
+<div class="container text-center bg-success pb-3 pt-3 rounded-2" *ngIf="personas.length != 0">
+    <h2 class="">Lista de Personas</h2>
+    @for(persona of personas; track persona) {
+    <div class="card p-2 m-3 w-25 d-inline-flex">
+        <div class="card-body">
+            <h5>Nombre: {{ persona.Nombre }}</h5>
+            <p>Email: {{ persona.Email }}</p>
+            <p>Edad: {{ persona.Edad }} años</p>
+        </div>
+    </div>
+    }
+</div>
