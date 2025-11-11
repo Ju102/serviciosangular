@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <h2 class="mb-5">Lista de Coches</h2>
+    <div class="coches-grid">
+        @for(coche of coches; track coche) {
+        <div class="card coche-card p-0">
+            <img class="coche-img" src="{{coche.imagen}}" alt="Imagen no disponible">
+            <div class="card-body">
+                <h5 class="card-title">{{coche.marca}} {{coche.modelo}}</h5>
+                <p class="card-text">Conductor: {{coche.conductor || "Ninguno"}}</p>
+            </div>
+        </div>
+        }
+    </div>
+</div>
